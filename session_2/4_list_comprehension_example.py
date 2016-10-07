@@ -6,5 +6,5 @@ my_list = [2 ** 4 for url in urls]
 print(my_list)
 
 
-# for url in urls:
-#     print('tatatata')
+for url in urls:
+    print('tatatata')

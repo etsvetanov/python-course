@@ -9,10 +9,10 @@ print(my_list)
 my_list.insert(3, 'spider')
 print(my_list)
 
-my_list.pop()
+a = my_list.pop()
 print(my_list)
 
-my_list.remove('donkey')
+b = my_list.remove('donkey')
 print(my_list)
 
 my_list.sort()
