@@ -1,7 +1,12 @@
-class Person:
-    def __init__(self, name):
-        self.name = name
 
+class Person:
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+
+    def print_name(self):
+        prefix = 'Sir' if self.gender is 'M' else 'Madam'
+        print('{prefix} {name}'.format(prefix=prefix, name=self.name))
 
 class Employee(Person):
     def __init__(self, name, salary, position):
@@ -9,8 +14,8 @@ class Employee(Person):
         self.salary = salary
         self.position = position
 
-    def increase_salary(self):
-        self.salary *= 1.2
+john = Employee('John', '90000', 'Developer')
+john.print_name()
 
 
 class Manager(Employee):

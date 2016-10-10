@@ -8,9 +8,11 @@ class MyClass:
 my_instance1 = MyClass('This is an instance attribute')
 my_instance2 = MyClass('This is another instance attribute')
 
-print('MyClass __dict__', MyClass.__dict__)
-print('my_instance1 __dict__', my_instance1.__dict__)
-print('my_instance2 __dict__', my_instance2.__dict__)
+
+
+print(MyClass.__dict__)
+print(my_instance1.__dict__)
+print(my_instance2.__dict__)
 
 print('my_instance1.class_attr', my_instance1.class_attr)
 print('my_instance2.class_attr', my_instance2.class_attr)
